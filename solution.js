@@ -1,7 +1,7 @@
 const readline = require("readline");
 const fs = require("fs");
 
-function getFileFromCLI() {
+function checkForFile() {
   if (process.argv.length < 3) {
     console.log("Enter a filename");
     console.log(`Usage: node ${process.argv[1]} FILENAME`);
@@ -12,7 +12,7 @@ const filename = process.argv[2];
 
 function customFormProcessing() {
   // check if there is file in the command line as input
-  getFileFromCLI();
+  checkForFile();
 
   const readInterface = readline.createInterface({
     input: fs.createReadStream(filename),

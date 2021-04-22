@@ -13,8 +13,3 @@ a
 a
 
 b
-
-abc
-abcd
-abcde
-fgi
